@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.item__container {
+  width: 95%;
+  max-width: 60rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); // En móvil, 1 item por fila
+  grid-gap: 1rem; // Espacio entre items
+
+  @media (min-width: 768px) {
+    // Tableta (768px) y dispositivos más grandes
+    grid-template-columns: repeat(2, 1fr); // En tableta, 2 items por fila
+  }
+
+  @media (min-width: 1024px) {
+    // Escritorio (1024px) y dispositivos más grandes
+    grid-template-columns: repeat(3, 1fr); // En escritorio, 3 items por fila
+  }
+}

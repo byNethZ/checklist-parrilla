@@ -1,0 +1,23 @@
+.head {
+  background-color: #DF0080;
+  padding: 1.5rem;
+  padding-bottom: 3rem;
+  text-align: center;
+
+  h1 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 100;
+
+    span {
+      font-weight: 400;
+    }
+  }
+
+  img {
+    display: block;
+    margin: auto;
+    width: 80%;
+    max-width: 5rem;
+  }
+}

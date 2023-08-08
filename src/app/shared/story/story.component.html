@@ -1,0 +1,7 @@
+<div class="story__container">
+  <a class="button" [href]="item.path" target="_blank">Ver Story</a
+  ><buttons-approved
+    *ngIf="item.approved === null"
+    [id]="item.id"
+  ></buttons-approved>
+</div>

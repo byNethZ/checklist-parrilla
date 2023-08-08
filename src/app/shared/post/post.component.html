@@ -1,0 +1,71 @@
+<div class="item">
+  <div class="dialog__container">
+    <div class="card post">
+      <div class="post-header">
+        <div class="post-author-info">
+          <img src="/assets/img/user.jpg" />
+          <div>
+            <div>
+              <span class="author-name">{{ businessName }}</span>
+              <i class="verified-icon"></i>
+            </div>
+            <div class="details">
+              <span>4h</span>
+              <span> · </span>
+              <i class="post-settings-icon"></i>
+            </div>
+          </div>
+        </div>
+        <i class="post-menu-icon"></i>
+      </div>
+      <p class="post-body">{{ item.copy }}</p>
+      <div class="post-image">
+        <img [src]="item.path" />
+      </div>
+      <div class="post-reactions">
+        <div class="reactions">
+          <div class="emojis">
+            <img src="/assets/img/wow.svg" />
+            <img src="/assets/img/haha.svg" />
+            <img src="/assets/img/like.svg" />
+          </div>
+          <span></span>
+        </div>
+        <div class="comment-share">
+          <div>
+            <span>121</span>
+            <span>Comments</span>
+          </div>
+          <div class="shares">
+            <span>48</span>
+            <span>Shares</span>
+          </div>
+        </div>
+      </div>
+      <div class="post-actions">
+        <div class="actions">
+          <div class="action">
+            <i class="like-icon"></i>
+            <span>Like</span>
+          </div>
+          <div class="action">
+            <i class="comment-icon"></i>
+            <span>Comment</span>
+          </div>
+          <div class="action">
+            <i class="share-icon"></i>
+            <span>Share</span>
+          </div>
+        </div>
+        <div class="interact-as">
+          <img src="/assets/img/logo680.png" />
+          <i class="dropdown-icon-small"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <buttons-approved
+    *ngIf="item.approved === null"
+    [id]="item.id"
+  ></buttons-approved>
+</div>
